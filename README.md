@@ -23,7 +23,7 @@ Variation 4	38	578	0.06574394464
 
 I would like to know the proper way to design this experiment in order to avoid confounding results. My goal is to then determine if certain variations of the form would cause more providers to send a quote after coming to the page, making Acme Corp more profitable $$ 
 
-## Business Solution
+## Solution
 The fundamental components of a statistically sound experiment is 
   1. Randomization
   2. Test and Control Groups
