@@ -1,5 +1,5 @@
 # A/B-Test
-In this project I will demonstrate how to properly design an A/B test and measure the results by testing for statistical significance. To provide context, I will use Acme Corp as a fictional company that has a common real world business problem.
+In this project I demonstrated how to properly design an A/B test and measure the results by testing for statistical significance. To provide context, I will use Acme Corp as a fictional company that has a common real world business problem.
 ## Business Problem
 Here's a 10,000-foot view of the Acme Corp product:
 A consumer posts a request for a service needed. Every request is in some category (e.g., Catering, Personal Training, Interior Design) and some location (e.g., New York, San Francisco).
@@ -29,7 +29,7 @@ The fundamental components of a statistically sound experiment is
   2. Test and Control Groups
   3. Repeadability and Reproducibility of the experiment
   
-Service providers should be selected randomly when inviting them through different treatment variations to minimize statistical differences between the providers. For example, personal trainers may like Variation 3 the best which can introduce bias to the calculation if we specifically handpicked them. However, that biased is minimized if Variation 3 is sent out to different categories of contractors, giving our experiment an unbiased result.
+Invites should randomly be divided among four new variations of the quote form as well as the baseline form  to minimize statistical differences and bias between the providers. For example, personal trainers may like Variation 3 the best which can introduce bias to the calculation if we specifically handpicked them. This would be a problem since personal trainers do not represent other service providers such as Caterers who would also get invites from variation 3 and may not like that particular design. 
 The control group is used as a benchmark to compare results to. The test group only has one treatment differece. A treatment is the thing you are testing. In this example, the treatment is the design. Hence, the only difference between the Baseline and Variations should be one change in the design and nothing else. The header, font size, and words of the email should be exactly the same. If not, then we have no way of determining which factor contributed to a different conversion rate. This is called confounding results.
 The test needs to be repeated to ensure results are consistent and thus reliable. In this case, the test should be run the same way the week after as close as possible by the day, hour, and minute, reducing confouding results as much as possible. Reproducibility ensures that other areas of the business can benefit from this test. In this case, if Acme corp had another website that sells widgets using different designs, they can easily run the same test. 
 
