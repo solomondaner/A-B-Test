@@ -14,6 +14,6 @@ Variation 2: 18 quotes out of 622 viewers
 Variation 3: 51 quotes out of 606 viewers
 Variation 4: 38 quotes out of 578 viewers
 
-My goal was to determine if certain changes to the design of the form would cause more providers to send a quote after coming to the page. I would also like to know the proper way to design this experiment in order to properly A/B test the different variations.
+I would like to know the proper way to design this experiment in order to avoid confounding results. My goal is to then determine if certain variations of the form would cause more providers to send a quote after coming to the page, making Acme Corp more profitable $$ 
 
-
+## Business Solution
