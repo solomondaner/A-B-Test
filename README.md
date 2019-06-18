@@ -17,3 +17,11 @@ Variation 4: 38 quotes out of 578 viewers
 I would like to know the proper way to design this experiment in order to avoid confounding results. My goal is to then determine if certain variations of the form would cause more providers to send a quote after coming to the page, making Acme Corp more profitable $$ 
 
 ## Business Solution
+The fundamental components of a statistically sound experiment is 
+  1. Randomization
+  2. Test and Control Groups
+  3. Repeadability and Reproducibility of the experiment
+  
+Service providers should be selected randomly when inviting them through different treatment variations to minimize statistical differences between the providers. For example, personal trainers may like Variation 3 the best which can introduce bias to the calculation if we specifically handpicked them. However, that biased is minimized if Variation 3 is sent out to different categories of contractors, giving our experiment an unbiased result.
+The control group is used as a benchmark to compare results to. The test group only has one treatment differece. A treatment is the thing you are testing. In this example, the treatment is the design. Hence, the only difference between the Baseline and Variations should be one change in the design and nothing else. The header, font size, and words of the email should be exactly the same. If not, then we have no way of determining which factor contributed to a different conversion rate. This is called confounding results.
+The test needs to be repeated to ensure results are consistent and thus reliable. In this case, the test should be run the same way the week after as close as possible by the day, hour, and minute, reducing confouding results as much as possible. Reproducibility ensures that other areas of the business can benefit from this test. In this case, if Acme corp had another website that sells widgets using different designs, they can easily run the same test. 
