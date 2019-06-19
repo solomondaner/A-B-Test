@@ -8,13 +8,13 @@ Providers view the invite and some choose to send a quote to the consumer expres
 
 I've just concluded a test of our quote form. After receiving an invite, service providers come to the quote form to view the consumer request and choose whether or not to pay to send a quote. Over the course of a week, I divided invites from about 3000 requests among four new variations of the quote form as well as the baseline form we've been using for the last year. Here are my results:
 
-| Bucket       | Quotes | Viewers |
-| -------------|:-------| -------:|
-| Baseline     | 32     | 595     |
-| Variation 1  | 30     | 599     |
-| Variation 2  | 18     | 622     |
-| Variation 3  | 51     | 606     |
-| Variation 4  | 38     | 578     |
+| Bucket       | Quotes | Viewers | Conversion Rate |
+| -------------|:-------| -------:| --------------: |
+| Baseline     | 32     | 595     | .05             |
+| Variation 1  | 30     | 599     | .05             |
+| Variation 2  | 18     | 622     | .03             |
+| Variation 3  | 51     | 606     | .08             |
+| Variation 4  | 38     | 578     | .07             |
 
 
 
