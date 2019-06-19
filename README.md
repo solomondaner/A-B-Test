@@ -8,19 +8,15 @@ Providers view the invite and some choose to send a quote to the consumer expres
 
 I've just concluded a test of our quote form. After receiving an invite, service providers come to the quote form to view the consumer request and choose whether or not to pay to send a quote. Over the course of a week, I divided invites from about 3000 requests among four new variations of the quote form as well as the baseline form we've been using for the last year. Here are my results:
 
-Baseline: 32 quotes out of 595 viewers
-Variation 1: 30 quotes out of 599 viewers
-Variation 2: 18 quotes out of 622 viewers
-Variation 3: 51 quotes out of 606 viewers
-Variation 4: 38 quotes out of 578 viewers
+| Bucket       | Quotes | Viewers |
+| -------------|:-------| -------:|
+| Baseline     | 32     | 595     |
+| Variation 1  | 30     | 599     |
+| Variation 2  | 18     | 622     |
+| Variation 3  | 51     | 606     |
+| Variation 4  | 38     | 578     |
 
-In Table Form:
-Bucket	Number of Quotes	Total number of viewers	Conversion Rate
-Baseline	32	595	0.05378151261
-Variation 1	30	599	0.05008347245
-Variation 2	18	622	0.02893890675
-Variation 3	51	606	0.08415841584
-Variation 4	38	578	0.06574394464
+
 
 My goal is to then determine if certain variations of the form would cause more providers to send a quote after coming to the page, making Acme Corp more profitable $$. I would also need to know the proper way to design this experiment in order to avoid confounding results. 
 
