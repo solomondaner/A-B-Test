@@ -1,5 +1,5 @@
 # A/B-Test
-In this project I demonstrated how to properly design an A/B test and measure the results by testing for statistical significance. To provide context, I used Acme Corp as a fictional company that has a common real world business problem.
+In this project I demonstrated how to properly design an A/B test and measure the results by testing for statistical significance using R. To provide context, I used Acme Corp as a fictional company that has a common real world business problem.
 ## Business Problem
 Here's a 10,000-foot view of the Acme Corp product:
 A consumer posts a request for a service needed. Every request is in some category (e.g., Catering, Personal Training, Interior Design) and some location (e.g., New York, San Francisco).
