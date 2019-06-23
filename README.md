@@ -32,6 +32,9 @@ The test needs to be repeated to ensure results are consistent and thus reliable
 
 Looking for statistical significance leads us to two more questions. Did the variation of quotes occur from design differences or strictly by chance? How large is the variation if it did not occur by chance? In statistics, there are no guarantees, so we have to change the word “strictly” to “unlikely” in the first question. Statisticians came to the consensus that an event is unlikely if it occurs less than 5% of the time. We ask the second question because everything in the real world will naturally vary in small amounts. Hence, we only care about large variations that are not expected. We can combine the first two questions to test for statistical significance, which means the variations of the designs were unlikely to have occurred by chance if the variations were expectantly small. A binomial test will be used since we are comparing two different proportions. For instance, the ratio between the number of quotes and total number of views differ for each variation. In addition, we are going to test with 95% confidence for the reason mentioned above. The p value represents the probability that the variations occurred by chance when there are no significant differences between them. Hence, a p value below .05 is statistically significant. Additionally, the ratio of quotes per views vary positively and negatively so a two tailed hypothesis test needs to be used. The R function prop.test() is a function used for the binomial test and will be used to run our analysis and is shown below.  
 Variation 2 and Variation 3 have a p value of 0.04153 and 0.04983 respectively. This means that about 4% of the time, the number of quotes from variation 2 and variation 3 will occur by chance alone, when variance is at its expected levels. Since those numbers are below .05, we can conclude that variation 2 will generate less quotes, and variation 3 will generate more quotes 95% of the time when compared to it's baseline. 
+```{r}
+code next
+after all code
 
 prop.test(x = c(32,30), n =c(595,599))
 
@@ -88,5 +91,5 @@ alternative hypothesis: two.sided
 sample estimates:
     prop 1     prop 2 
 0.05378151 0.06574394 
-
+```
 
