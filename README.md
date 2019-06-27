@@ -74,7 +74,7 @@ alternative hypothesis: two.sided
  -0.060627950 -0.000125856
 sample estimates:
     prop 1     prop 2 
-0.05378151 0.08415842 
+0.05378151 0.08415842  
 
 > prop.test(x = c(32,38), n =c(595,578))
 
