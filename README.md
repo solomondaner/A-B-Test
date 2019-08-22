@@ -22,11 +22,11 @@ My goal is to then determine if certain variations of the form would cause more 
 
 ## Solution
 The fundamental components of a statistically sound experiment is 
-  1. Randomization
+  1. Equal Randomization
   2. Test and Control Groups
   3. Repeadability and Reproducibility of the experiment
   
-Invites should randomly be divided among four new variations of the quote form as well as the baseline form  to minimize statistical differences and bias between the providers. For example, personal trainers may like Variation 3 the best which can introduce bias to the calculation if we specifically handpicked them. This would be a problem since personal trainers do not represent other service providers such as Caterers who would also get invites from variation 3 and may not like that particular design. 
+Invites should equally amongst the four new variations and the baseline form of the quote. From a statistical perspective, this is important because we can only run a t test to test for statistical significance if the within group variances are equal. The best way to accomplish this is by having equal size samples. In this example, a biomial test is used which does not require this assumption and hence it does not matter that the assumption of equality was borken from a statistical perspective. However, from a practical perspective most use LRU caches which means that the variation with the most quotes will have the highest speed, introducing user bias since users prefer higher speed despite the design of the quote. Invites should also be randomly divded to minimize statistical differences and bias between the providers. For example, personal trainers may like Variation 3 the best which can introduce bias to the calculation if we specifically handpicked them. This would be a problem since personal trainers do not represent other service providers such as Caterers who would also get invites from variation 3 and may not like that particular design. 
 
 The control group is used as a benchmark to compare results to. The test group only has one treatment differece. A treatment is the thing you are testing. In this example, the treatment is the design. Hence, the only difference between the Baseline and Variations should be one change in the design and nothing else. The header, font size, and words of the email should be exactly the same. If not, then we have no way of determining which factor contributed to a different conversion rate. This is called confounding results.
 
@@ -34,7 +34,11 @@ The test needs to be repeated to ensure results are consistent and thus reliable
 
 Looking for statistical significance leads us to two more questions. Did the variation of quotes occur from design differences or strictly by chance? How large is the variation if it did not occur by chance? In statistics, there are no guarantees, so we have to change the word “strictly” to “unlikely” in the first question. Statisticians came to the consensus that an event is unlikely if it occurs less than 5% of the time. We ask the second question because everything in the real world will naturally vary in small amounts. Hence, we only care about large variations that are not expected. We can combine the first two questions to test for statistical significance, which means the variations of the designs were unlikely to have occurred by chance if the variations were expectantly small. A binomial test will be used since we are comparing two different proportions. For instance, the ratio between the number of quotes and total number of views differ for each variation. In addition, we are going to test with 95% confidence for the reason mentioned above. The p value represents the probability that the variations occurred by chance when there are no significant differences between them. Hence, a p value below .05 is statistically significant. Additionally, the ratio of quotes per views vary positively and negatively so a two tailed hypothesis test needs to be used. The R function prop.test() is a function used for the binomial test and will be used to run our analysis and is shown below.  
 
-Variation 2 and Variation 3 have a p value of 0.04153 and 0.04983 respectively. This means that about 4% of the time, the number of quotes from variation 2 and variation 3 will occur by chance alone, when variance is at its expected levels. Since those numbers are below .05, we can conclude that variation 2 will generate less quotes, and variation 3 will generate more quotes 95% of the time when compared to it's baseline. 
+Assuming that speed did not effect users behavior and that the experiment was repeated at least one more time, one can conclude that Variation 2 and Variation 3 have a p value of 0.04153 and 0.04983 respectively. This means that about 4% of the time, the number of quotes from variation 2 and variation 3 will occur by chance alone, when variance is at its expected levels. Since those numbers are below .05, we can conclude that variation 2 will generate less quotes, and variation 3 will generate more quotes 95% of the time when compared to it's baseline. 
+
+## Business Solution
+Use Variation 2 and Variation 3.
+
 ```{r}
 
 prop.test(x = c(32,30), n =c(595,599))
