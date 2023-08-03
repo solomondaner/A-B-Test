@@ -37,7 +37,7 @@ Looking for statistical significance leads us to two more questions. Did the var
 Assuming that speed did not effect users behavior and that the experiment was repeated at least one more time, one can conclude that Variation 2 and Variation 3 have a p value of 0.04153 and 0.04983 respectively. This means that about 4% of the time, the number of quotes from variation 2 and variation 3 will occur by chance alone, when variance is at its expected levels. Since those numbers are below .05, we can conclude that variation 2 will generate less quotes, and variation 3 will generate more quotes 95% of the time when compared to it's baseline. 
 
 ## Business Action
-Use Variation 2 and Variation 3.
+Use Variation 3.
 
 ```{r}
 
